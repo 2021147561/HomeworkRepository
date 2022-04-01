@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(19, 16, 37, 0.74);
+}
+
+.login-form{
+    position: relative;
+}
+
+.login-form h1 {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.input-area-login {
+    margin-top: 20px;
+    width: 400px;
+    position: relative;
+}
+
+.input-area-login:first-child { margin-top: 0; }
+
+.input-area-login input {
+    width: 100%;
+    height: 70%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 18px;
+    color: white;
+    outline: none;
+}
+
+.input-area-login label {
+    position: absolute;
+    left: 5px; top: 15px;
+    font-size: 20px;
+    color: #999;
+    transition: all 0.5s ease
+}
+
+.input-area-login input:focus + label, .input-area-login input:valid + label {
+    top: -5px;
+    font-size: 13px;
+    color: rgb(195, 195, 255);
+}
+
+.btn-area-login {
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.btn-area-login button {
+    width: 45%; height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    margin-left: 6px;
+    margin-right: 6px;
+    color: rgba(19, 16, 37, 0.8);
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.signup-form {
+    margin-top: 30px;
+    position: relative;
+}
+
+.signup-form h1 {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.input-area {
+    margin-left: 200px;
+    margin-top: 20px;
+    width: 800px;
+    position: relative;
+}
+
+.input-area input {
+    width: 30%;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid  1px #999;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+    margin-left: 10px;
+    padding: 20px 10px 10px;
+}
+
+#phone-1 { width: 11%; }
+
+.input-area label {
+    position: relative;
+    font-size: 25px; color:#999;
+    top: 5px;
+}
+
+#CAPTCHA {
+    width: 5%;
+    height: 20px;
+    top: 5px;
+}
+
+#captcha-label {
+    font-size: 20px;
+    top: -0.3ex;
+}
+
+.btn-area {
+    margin-top: 30px;
+    position: relative;
+}
+
+.btn-area button {
+    width: 20%;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    color: rgba(19, 16, 37, 0.8);
+    background: white;
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 17px;
+}
+
+.caption {
+    margin-top: 10px;
+    position: relative;
+}
+
+.caption a {
+    font-size: 20px;
+    color: #999;
+    text-decoration: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.needed {
+    color: rgba(240, 135, 135, 0.74)
+}
+
+input::placeholder {
+    color:rgba(231, 215, 250, 0.459);
+}
