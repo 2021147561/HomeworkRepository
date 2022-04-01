@@ -130,8 +130,10 @@ body {
 }
 
 .btn-area {
-    margin-top: 30px;
+    margin-top: 80px;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-area button {
@@ -150,6 +152,8 @@ body {
 .caption {
     margin-top: 10px;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .caption a {
