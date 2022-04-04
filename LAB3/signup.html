@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="reset" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <section class="signup-form">
+        <h1>Sign Up Page</h1>
+        <form>
+            <div class="input-area">
+                <label>NAME<span class="needed">*</span></label>
+                <input type="text" name="NAME" id="NAME" autofocus autocomplete="off" required>
+            </div>
+            <div class="input-area">
+                <label>BIRTH<span class="needed">*</span></label>
+                <input type="date" name="BIRTH" id="BIRTH" required>
+            </div>
+            <div class="input-area">
+                <label>AGE</label>
+                <input type="number" name="AGE" id="AGE" min="15" max="80" step="1" value="25">
+            </div>
+            <div class="input-area">
+                <label>PHONE<span class="needed">*</span></label>
+                <input type="text" name="phone-1" id="phone-1" list="phone-nums" placeholder="(###)" required>
+                <datalist id="phone-nums">
+                    <option value="(010)"></option>
+                    <option value="(011)"></option>
+                    <option value="(016)"></option>
+                    <option value="(017)"></option>
+                    <option value="(018)"></option>
+                    <option value="(019)"></option>
+                </datalist>
+                <input type="tel" placeholder="####-####" pattern="\d{4}-\d{4}" required>
+            </div>
+            <div class="input-area">
+                <label>E-MAIL</label>
+                <input type="emial" name="EMAIL" id="EMAIL" placeholder="user@domain.com">
+            </div>
+            <div class="input-area">
+                <label>USER ID<span class="needed">*</span></label>
+                <input type="text" name="ID" id="ID" placeholder="Enter User ID" autocomplete="off" required>
+            </div>
+            <div class="input-area">
+                <label>PASSWORD<span class="needed">*</span></label>
+                <input type="password" name="PW" id="PW" placeholder="Enter Password" required>
+            </div>
+            <div class="input-area">
+                <label>PW CHECK<span class="needed">*</span></label>
+                <input type="password" name="PW-check" id="PW-check" placeholder="Enter password again" required>
+            </div>
+            <div class="input-area">
+                <input type="checkbox" name="CAPTCHA" id="CAPTCHA" required>
+                <label id="captcha-label">I'm not a robot.<span class="needed">*</span></label>
+            </div>
+            <div class="btn-area">
+                <button id="submit" type="submit">SUBMIT</button>
+                <button id="cancel" type="reset">CANCEL</button>
+            </div>
+            <div class="caption">
+                <a href="https://2021147561.github.io/HomeworkRepository/LAB2/login.html">Go to <span class="underline">LOGIN PAGE</span></a>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
