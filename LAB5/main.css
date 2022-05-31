@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* border: 1px solid black; */
+}
+
+body {
+    margin-top: 150px;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: rgba(19, 16, 37, 0.74);
+}
+p {
+    color: white;
+}
+
+.login-form{
+    position: relative;
+}
+
+.login-form h1 {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.input-area-login {
+    margin-top: 20px;
+    width: 400px;
+    position: relative;
+}
+
+.input-area-login:first-child { margin-top: 0; }
+
+.input-area-login input {
+    width: 100%;
+    height: 70%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 18px;
+    color: white;
+    outline: none;
+}
+
+.input-area-login label {
+    position: absolute;
+    left: 5px; top: 15px;
+    font-size: 20px;
+    color: #999;
+    transition: all 0.5s ease
+}
+
+.input-area-login input:focus + label, .input-area-login input:valid + label {
+    top: -5px;
+    font-size: 13px;
+    color: rgb(195, 195, 255);
+}
+
+.btn-area-login {
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn-area-login button {
+    width: 45%; height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    margin-left: 6px;
+    margin-right: 6px;
+    color: rgba(19, 16, 37, 0.8);
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.signup-form {
+    margin-top: 30px;
+    position: relative;
+}
+
+.signup-form h1 {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.input-area {
+    margin-left: 200px;
+    margin-top: 20px;
+    width: 800px;
+    position: relative;
+}
+
+.input-area input {
+    width: 30%;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid  1px #999;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+    margin-left: 10px;
+    padding: 20px 10px 10px;
+}
+
+#phone-1 { width: 11%; }
+
+.input-area label {
+    position: relative;
+    font-size: 25px; color:#999;
+    top: 5px;
+}
+
+#CAPTCHA {
+    width: 5%;
+    height: 20px;
+    top: 5px;
+}
+
+#captcha-label {
+    font-size: 20px;
+    top: -0.3ex;
+}
+
+.btn-area {
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-area button {
+    width: 20%;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    color: rgba(19, 16, 37, 0.8);
+    background: white;
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 17px;
+}
+
+.caption {
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.caption a {
+    font-size: 20px;
+    color: #999;
+    text-decoration: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.needed {
+    color: rgba(240, 135, 135, 0.74)
+}
+
+input::placeholder {
+    color:rgba(231, 215, 250, 0.459);
+}
+
+.main{
+    position: relative;
+    max-width: 1020px;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-head h1 {
+    font-size: 40px;
+    color: white;
+    width: 250px;
+    animation-name: movingheader;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    margin-bottom: 40px;
+}
+
+@keyframes movingheader {
+    0% {margin-left: 70%; margin-right: 0;}
+    100% {margin-left: 1%x; margin-right: 70%;}
+}
+
+.main-nav {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main-nav button {
+    border: none;
+    background-color: transparent;
+    margin-left: 25px;
+    margin-right: 20px;
+    color: #999;
+    cursor: pointer;
+    font-size: 20px;
+    height: 30px;
+    padding-bottom: 10px;;
+}
+
+.main-nav button:first-child {
+    color: white;
+    border-bottom: rgba(240, 135, 135, 0.74) 1px solid;
+}
+
+@keyframes movingnav1{
+    0% {margin-left: 70%; margin-right: 1%;}
+    100% {margin-left: 1%px; margin-right: 1%;}
+}
+
+.main-nav button:hover {
+    color:rgb(195, 195, 255);
+    border-bottom:rgba(240, 135, 135, 0.74) 1.5px solid;
+}
+
+.filter {
+    margin-left: 2%;
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;;
+}
+
+#search_keywords {
+    width : 30px;
+    height: 30px;
+    background: rgb(195, 195, 255);
+    color: white;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.main-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.item {
+    height: 253px;    
+    border: #999 1px solid;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.item:hover {
+    border:rgb(195, 195, 255) 1px solid;
+    cursor: pointer;
+}
+
+.item img {
+    border-radius: 20px;
+    transition-property: transform, width, height;
+    transition-duration: 2s, 2s, 2s;
+    transition-timing-function: ease;
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    position: relative;
+    left: 15%; top: 15%;
+    z-index: 0;
+}
+
+#main-body-1 img:hover {
+    transform: rotate(360deg);   
+}
+
+#main-body-2 img:hover {
+    width: 100%; height: 100%;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.quote h2 {
+    color: rgba(255,255,255,0.8);
+    font-size: 25px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.quote p {
+    color: #999;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+
+@media (max-width: 480px) {
+    #main-head {
+        display: flex;
+        justify-content: center;
+    }
+    #main-head h1 { text-align: center;}
+
+    .main-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .main-nav button {
+        margin-bottom: 10px;
+    }
+
+    .main-body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main { 
+        display: flex;
+        justify-content: center;
+        margin-top: 1500px;
+    }
+    .quote {
+        width: 90vw;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .item {width: 80%;}
+}
+
+@media (max-width: 800px) and (min-width: 481px){
+    body {
+        margin-top: 300px;
+    }
+    #main-head {
+        display: flex;
+        justify-content: center;
+    }
+    #main-head h1 { text-align: center;}
+
+    .main-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .main-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .main-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    .main {
+        margin-top: 10px;
+    }
+    .item { 
+        width: 40%;
+        height: 250px;
+    }
+    .quote {
+        width: 90vw;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (min-width: 801px) {
+
+    body {
+        margin-top: 100px;
+    }
+
+    .main-body {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    
+    .main-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .item { width: 25%; }
+    
+    #main-head h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .main-nav button:first-child {
+        animation-name: movingnav1;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+    }
+}

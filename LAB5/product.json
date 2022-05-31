@@ -1,0 +1,384 @@
+[
+    {
+        "name" : "diamond 1",
+        "type":"diamond",
+        "contents" : "Pure white diamond 1",
+        "price" : "1,000$",
+        "img" : "images/diamond 1.png"
+    },
+
+    {
+        "name" : "diamond 2",
+        "type":"diamond",
+        "contents" : "Pure white diamond 2",
+        "price" : "1,200$",
+        "img" : "images/diamond 2.png"
+    },
+
+    {
+        "name" : "diamond 3",
+        "type":"diamond",
+        "contents" : "Pure white diamond 3",
+        "price" : "1,100$",
+        "img" : "images/diamond 3.png"
+    },
+
+    {
+        "name" : "diamond 4",
+        "type":"diamond",
+        "contents" : "Pure white diamond 4",
+        "price" : "1,000$",
+        "img" : "images/diamond 4.png"
+    },
+
+    {
+        "name" : "diamond 5",
+        "type":"diamond",
+        "contents" : "Pure white diamond 5",
+        "price" : "1,200$",
+        "img" : "images/diamond 5.png"
+    },
+
+    {
+        "name" : "diamond 6",
+        "type":"diamond",
+        "contents" : "Pure white diamond 6",
+        "price" : "1,100$",
+        "img" : "images/diamond 6.png"
+    },
+
+    {
+        "name" : "diamond 7",
+        "type":"diamond",
+        "contents" : "Pure white diamond 7",
+        "price" : "1,100$",
+        "img" : "images/diamond 7.png"
+    },
+
+    {
+        "name" : "diamond 8",
+        "type":"diamond",
+        "contents" : "Pure white diamond 8",
+        "price" : "1,100$",
+        "img" : "images/diamond 8.png"
+    },
+
+    {
+        "name" : "diamond 9",
+        "type":"diamond",
+        "contents" : "Pure white diamond 9",
+        "price" : "1,000$",
+        "img" : "images/diamond 9.png"
+    },
+
+    {
+        "name" : "diamond 10",
+        "type":"diamond",
+        "contents" : "Pure white diamond 10",
+        "price" : "1,200$",
+        "img" : "images/diamond 10.png"
+    },
+
+    {
+        "name" : "diamond 11",
+        "type":"diamond",
+        "contents" : "Pure white diamond 11",
+        "price" : "1,100$",
+        "img" : "images/diamond 11.png"
+    },
+
+    {
+        "name" : "diamond 12",
+        "type":"diamond",
+        "contents" : "Pure white diamond 12",
+        "price" : "1,100$",
+        "img" : "images/diamond 12.png"
+    },
+
+    {
+        "name" : "emerald 1",
+        "type":"emerald",
+        "contents" : "Beautiful green emerald 1",
+        "price" : "1,000$",
+        "img" : "images/emerald 1.png"
+    },
+
+    {
+        "name" : "emerald 2",
+        "type":"emerald",
+        "contents" : "Beautiful green emerald 2",
+        "price" : "1,200$",
+        "img" : "images/emerald 2.png"
+    },
+
+    {
+        "name" : "emerald 3",
+        "type":"emerald",
+        "contents" : "Beautiful green emerald 3",
+        "price" : "1,100$",
+        "img" : "images/emerald 3.png"
+    },
+
+    {
+        "name" : "emerald 4",
+        "type":"emerald",
+        "contents" : "Beautiful green emerald 4",
+        "price" : "1,000$",
+        "img" : "images/emerald 4.png"
+    },
+
+    {
+        "name" : "emerald 5",
+        "type":"emerald",
+        "contents" : "Beautiful green emerald 5",
+        "price" : "1,200$",
+        "img" : "images/emerald 5.png"
+    },
+
+    {
+        "name" : "emerald 6",
+        "type":"emerald",
+        "contents" : "Beautiful green emerald 6",
+        "price" : "1,100$",
+        "img" : "images/emerald 6.png"
+    },
+
+    {
+        "name" : "emerald 7",
+        "type":"emerald",
+        "contents" : "Beautiful green emerald 7",
+        "price" : "1,100$",
+        "img" : "images/emerald 7.png"
+    },
+
+    {
+        "name" : "emerald 8",
+        "type":"emerald",
+        "contents" : "Beautiful green emerald 8",
+        "price" : "1,000$",
+        "img" : "images/emerald 8.png"
+    },
+
+    {
+        "name" : "emerald 9",
+        "type":"emerald",
+        "contents" : "Beautiful green emerald 9",
+        "price" : "1,200$",
+        "img" : "images/emerald 9.png"
+    },
+
+    {
+        "name" : "emerald 10",
+        "type":"emerald",
+        "contents" : "Beautiful green emerald 10",
+        "price" : "1,100$",
+        "img" : "images/emerald 10.png"
+    },
+
+    {
+        "name" : "emerald 11",
+        "type":"emerald",
+        "contents" : "Beautiful green emerald 11",
+        "price" : "1,000$",
+        "img" : "images/emerald 11.png"
+    },
+
+    {
+        "name" : "ruby 1",
+        "type":"ruby",
+        "contents" : "Saturated red ruby 1",
+        "price" : "1,000$",
+        "img" : "images/ruby 1.png"
+    },
+
+    {
+        "name" : "ruby 2",
+        "type":"ruby",
+        "contents" : "Saturated red ruby 2",
+        "price" : "1,200$",
+        "img" : "images/ruby 2.png"
+    },
+
+    {
+        "name" : "ruby 3",
+        "type":"ruby",
+        "contents" : "Saturated red ruby 3",
+        "price" : "1,100$",
+        "img" : "images/ruby 3.png"
+    },
+
+    {
+        "name" : "ruby 4",
+        "type":"ruby",
+        "contents" : "Saturated red ruby 4",
+        "price" : "1,000$",
+        "img" : "images/ruby 4.png"
+    },
+
+    {
+        "name" : "ruby 5",
+        "type":"ruby",
+        "contents" : "Saturated red ruby 5",
+        "price" : "1,200$",
+        "img" : "images/ruby 5.png"
+    },
+
+    {
+        "name" : "ruby 6",
+        "type":"ruby",
+        "contents" : "Saturated red ruby 6",
+        "price" : "1,100$",
+        "img" : "images/ruby 6.png"
+    },
+
+    {
+        "name" : "ruby 7",
+        "type":"ruby",
+        "contents" : "Saturated red ruby 7",
+        "price" : "1,100$",
+        "img" : "images/ruby 7.png"
+    },
+
+    {
+        "name" : "ruby 8",
+        "type":"ruby",
+        "contents" : "Saturated red ruby 8",
+        "price" : "1,000$",
+        "img" : "images/ruby 8.png"
+    },
+
+    {
+        "name" : "ruby 9",
+        "type":"ruby",
+        "contents" : "Saturated red ruby 9",
+        "price" : "1,200$",
+        "img" : "images/ruby 9.png"
+    },
+
+    {
+        "name" : "ruby 10",
+        "type":"ruby",
+        "contents" : "Saturated red ruby 10",
+        "price" : "1,100$",
+        "img" : "images/ruby 10.png"
+    },
+
+    {
+        "name" : "ruby 11",
+        "type":"ruby",
+        "contents" : "Saturated red ruby 11",
+        "price" : "1,000$",
+        "img" : "images/ruby 11.png"
+    },
+
+    {
+        "name" : "ruby 12",
+        "type":"ruby",
+        "contents" : "Saturated red ruby 12",
+        "price" : "1,200$",
+        "img" : "images/ruby 12.png"
+    },
+
+    {
+        "name" : "ruby 13",
+        "type":"ruby",
+        "contents" : "Saturated red ruby 13",
+        "price" : "1,100$",
+        "img" : "images/ruby 13.png"
+    },
+
+    {
+        "name" : "sapphire 1",
+        "type":"sapphire",
+        "contents" : "Cool blue sapphire 1",
+        "price" : "1,000$",
+        "img" : "images/sapphire 1.png"
+    },
+
+    {
+        "name" : "sapphire 2",
+        "type":"sapphire",
+        "contents" : "Cool blue sapphire 2",
+        "price" : "1,200$",
+        "img" : "images/sapphire 2.png"
+    },
+
+    {
+        "name" : "sapphire 3",
+        "type":"sapphire",
+        "contents" : "Cool blue sapphire 3",
+        "price" : "1,100$",
+        "img" : "images/sapphire 3.png"
+    },
+
+    {
+        "name" : "sapphire 4",
+        "type":"sapphire",
+        "contents" : "Cool blue sapphire 4",
+        "price" : "1,000$",
+        "img" : "images/sapphire 4.png"
+    },
+
+    {
+        "name" : "sapphire 5",
+        "type":"sapphire",
+        "contents" : "Cool blue sapphire 5",
+        "price" : "1,200$",
+        "img" : "images/sapphire 5.png"
+    },
+
+    {
+        "name" : "sapphire 6",
+        "type":"sapphire",
+        "contents" : "Cool blue sapphire 6",
+        "price" : "1,100$",
+        "img" : "images/sapphire 6.png"
+    },
+
+    {
+        "name" : "sapphire 7",
+        "type":"sapphire",
+        "contents" : "Cool blue sapphire 7",
+        "price" : "1,100$",
+        "img" : "images/sapphire 7.png"
+    },
+    {
+        "name" : "sapphire 9",
+        "type":"sapphire",
+        "contents" : "Cool blue sapphire 9",
+        "price" : "1,000$",
+        "img" : "images/sapphire 9.png"
+    },
+
+    {
+        "name" : "sapphire 10",
+        "type":"sapphire",
+        "contents" : "Cool blue sapphire 10",
+        "price" : "1,200$",
+        "img" : "images/sapphire 10.png"
+    },
+
+    {
+        "name" : "sapphire 8",
+        "type":"sapphire",
+        "contents" : "Cool blue sapphire 8",
+        "price" : "1,100$",
+        "img" : "images/sapphire 8.png"
+    },
+
+    {
+        "name" : "sapphire 11",
+        "type":"sapphire",
+        "contents" : "Cool blue sapphire 11",
+        "price" : "1,000$",
+        "img" : "images/sapphire 11.png"
+    },
+
+    {
+        "name" : "sapphire 12",
+        "type":"sapphire",
+        "contents" : "Cool blue sapphire 12",
+        "price" : "1,200$",
+        "img" : "images/sapphire 12.png"
+    }
+]

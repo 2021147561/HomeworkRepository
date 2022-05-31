@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="reset" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('product.json')
+                .then(response => response.json())
+                .then(json => base(json))
+                .catch(error => {
+                    console.log(error)
+                });
+            });
+
+        function base(data) {
+
+            var product = data;
+            init(data);
+
+            function init(data) {
+                const itemarea = document.querySelector(".main-div");
+                function filtering(e) {
+                    e.preventDefault();
+                    // 제품 필터링 (카테고리, 키워드)
+                    // 입력받은 값 저장
+                    product = [];
+                    const type = document.getElementById("category").value;
+                    const keyword = document.getElementById("search").value;
+
+                    console.log(type, keyword);
+
+                    // json 파일에서 해당하는 배열 찾기
+                    if (type == "All") {
+                        if (keyword == "Search Keywords") { product = data; }
+                        else {
+                            for (let i = 0; i < data.length; i++) {
+                                if (data[i].contents.toLowerCase().includes(keyword.toLowerCase())) {
+                                    product.push(data[i]);
+                                }
+                            }
+                        }
+                    }
+                    else {
+                        if (keyword == "Search Keywords") {
+                            for (let i = 0; i < data.length; i++) {
+                                if (data[i].type == type.toLowerCase()) { product.push(data[i]); }
+                            }
+                        }
+                        else {
+                            for (let i = 0; i < data.length; i++) {
+                                if (data[i].type == type.toLowerCase() && data[i].contents.toLowerCase().includes(keyword.toLowerCase())) {
+                                    product.push(data[i]);
+                                }
+                            }
+                        }
+                    }
+
+                    // 원하는 개수만큼 보여주기
+                    reset_items();
+                    // 결과가 없을 때
+                    if (product.length == 0) {
+                        const p = document.createElement('p');
+                        p.id = "noResult";
+                        p.innerHTML = "There is no result.";
+                        itemarea.appendChild(p);
+                    }
+                    // 결과가 있을 떄
+                    show_init(product);
+                }
+
+                show_init(data);
+                document.querySelector("#search_keywords").onclick = filtering;
+
+                // 제공받은 제품 리스트에서 9개만 보여주기
+                function show_init(product) {
+                    for (let i = 0; i < product.length; i++) {
+                        if (i < 6) {
+                            let div = document.createElement('div');
+                            let img = document.createElement('img');
+                            
+                            div.className = 'item';
+                            div.id = 'item ' + product[i].name;
+                            div.addEventListener('click', showContents);
+
+                            img.id = 'phot ' + product[i].name;
+                            img.src = product[i].img;
+                            img.alt = product[i].contents;
+                            
+                            itemarea.appendChild(div);
+                            div.appendChild(img);
+                        }
+                    }
+                    
+                }
+
+                // 현재 main-div의 모든 자식 노드 삭제
+                function reset_items() {
+                    while (itemarea.hasChildNodes()) {
+                        itemarea.removeChild(itemarea.firstChild);
+                    }
+                }
+
+                
+            }
+
+            function showContents(e) {
+                    // 클릭했을 때 설명 보여주기 (이름, 가격, 설명)
+                    let product_name = e.path[0].id.substr(5);
+                    if (document.getElementById('phot ' + product_name).style.opacity != 0.4) {
+                        for (let i = 0; i < data.length; i++) {
+                            if (product_name == data[i].name) {
+                                document.getElementById('phot ' + product_name).style.opacity = 0.4;
+                                let elem = document.createElement('p');
+                                elem.innerHTML = data[i].contents + " <br> " + data[i].price;
+                                document.getElementById('item ' + product_name).appendChild(elem);
+                                elem.style.textAlign = "center";
+                                elem.style.position = "relative";
+                                elem.style.top = "-30%";
+                                elem.style.backgroundColor = "rgba(255,255,255,0.3)";
+                            }
+                        }
+                    }
+                    
+                }
+
+            window.onscroll = () => {
+                if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                    // 원하는 개수만큼 새로운 제품 정보 로드
+                    // 일단 지금 몇 개 있는지 파악하고 그 뒤부터 다시 저장
+                    let elem_num = document.querySelector(".main-div").childElementCount;
+                    let new_product = product.slice(elem_num);
+                    // div랑 img 만들어서 보이게 하기
+                    for (let i = 0; i < new_product.length; i++) {
+                        if (i < 6) {
+                            let div = document.createElement('div');
+                            let img = document.createElement('img');
+                            
+                            div.className = 'item';
+                            div.id = 'item ' + new_product[i].name;
+                            div.addEventListener('click', showContents);
+
+                            img.id = 'phot ' + new_product[i].name;
+                            img.src = new_product[i].img;
+                            img.alt = new_product[i].contents;
+                            
+                            document.querySelector(".main-div").appendChild(div);
+                            div.appendChild(img);
+                        }
+                    }
+                }
+            }
+        }
+
+    
+
+
+    </script>
+</head>
+<body>
+    <section class="main">
+        <div id="main-head">
+            <h1>Main Page</h1>
+        </div>
+        <nav class="main-nav">
+            <button id="main-main" type="button" onclick="location.href='index.html'">MAIN</button>
+            <button id="main-login" type="button" onclick="location.href='login.html'">LOGIN</button>
+            <button id="main-signup" type="button" onclick="location.href='signup.html'">SIGN UP</button>    
+        </nav>
+        <form>
+            <p class="filter">
+                Category
+                <select list="type" id="category">
+                    <option selected>All</option>
+                    <option>Diamond</option>
+                    <option>Ruby</option>
+                    <option>Sapphire</option>
+                    <option>Emerald</option>
+                </select>
+                <br />
+                Search  
+                <input tpye="text" id="search" value="Search Keywords" /> 
+                <button id="search_keywords"> ▶️ </button>
+            </p>
+        </form>
+        <div class="main-body">
+            <div class="main-div" id="main-body-1"></div>
+            <div class="quote">
+                <h2>
+                    Disfruta del esplendor de tus hermosas joyas.
+                </h2>
+                <p>
+                    Aquí pueden ver y comprar varias gemas raras. Si visita la tienda, puede trabajar en piedras gemelas o vender joyas.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
