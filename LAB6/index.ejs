@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Main Page</title>
+        <link rel="reset" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        
+    </head>
+    <body>
+		<section class="main">
+			<div id="main-head">
+				<h1>Main Page</h1>
+            </div>
+            <nav class="main-nav">
+				<button id="main-main" type="button" onclick="location.href=''">MAIN</button>
+                <button id="main-login" type="button" onclick="location.href='login'">LOGIN</button>
+                <button id="main-signup" type="button" onclick="location.href='signup'">SIGN UP</button>    
+            </nav>
+            <form>
+				<p class="filter">
+                    Category
+                    <select list="type" id="category">
+						<option selected>All</option>
+                        <option>Diamond</option>
+                        <option>Ruby</option>
+                        <option>Sapphire</option>
+                        <option>Emerald</option>
+                    </select>
+                    <br />
+                    Search  
+                    <input tpye="text" id="search" value="Search Keywords" /> 
+                    <button id="search_keywords"> ▶️ </button>
+                </p>
+            </form>
+            <div class="main-body">
+				<div class="main-div" id="main-body-1"></div>
+                <div class="quote">
+					<h2>
+						Disfruta del esplendor de tus hermosas joyas.
+                    </h2>
+                    <p>
+						Aquí pueden ver y comprar varias gemas raras. Si visita la tienda, puede trabajar en piedras gemelas o vender joyas.
+                    </p>
+                </div>
+            </div>
+        </section>
+		<input type="hidden" id="dbdata" value="<%= JSON.stringify(renderdata) %>" />
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+    </html>
